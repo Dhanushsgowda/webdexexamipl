@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>IPL</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="header.css">
+      <link rel="stylesheet" href="team_detailspage.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+      <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+      
+      
+    </head>
+
+<body>
+  
+   <nav>
+      <div class="menu-icon">
+         <span class="fas fa-bars"></span>
+      </div>
+      <div class="logo">
+         IPL
+      </div>
+      <div class="nav-items">
+         <li><a href="Home_Page.html">Home</a></li>
+         <li><a href="#">About</a></li>
+         <li><a href="#">Contact</a></li>
+      </div>
+      <button class="open-button" onclick="openForm()">Add Player</button>
+      <form autocomplete="off" action="team_detailspage.html">
+        <div class="autocomplete" style="width:300px;">
+          <input id="myInput" type="text" name="id" placeholder="Type Team Name">
+        </div>
+        <input type="submit">
+      </form>
+   </nav>
+   <div class="form-popup" id="myForm">
+      <form  class="form-container">
+    
+        <label for=""><b>PlayerName : </b></label>
+        <input type="text" placeholder="" id="PlayerName" required>
+    
+        <label for=""><b>Team</b></label>
+        <input type="text" placeholder="" id="team" required>
+
+        <label for=""><b>price</b></label>
+        <input type="text" placeholder="" id="price" required>
+
+        <label for=""><b>isPlaying</b></label>
+        <input type="text" placeholder="" id="isPlaying" required>
+
+        <label for=""><b>Description</b></label>
+        <input type="text" placeholder="" id="Description" required>
+
+        <label for=""><b>Photo Url</b></label>
+        <input type="text" placeholder="" id="photo" required>
+    
+        <button type="submit" class="btn" onclick="insert()">Insert</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+
+
+<section id="clothing-section" class="homepage-section">
+    <h3 class="section-heading">Players  List</h3>
+
+    <div id="players-list" class="product-grid">
+
+       <!-- <div class="product-card"  >
+            <img class="product-image" src="Images/Teams_Icons/logo_rcb.jpg"/>
+        <div class="product-meta">
+            <h4>name</h4>
+            <h4>Royal Challengers Bangalore</h4>
+            <h5>price</h5>
+            <p>playing status</p>
+            <p>role</p>
+        </div>
+        </div> -->
+
+    </div>
+</section>
+
+<script src="team_detailspage.js"></script>
+<script src="header.js"></script>
+
+         </body>
+         </html>
